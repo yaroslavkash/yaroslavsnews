@@ -1,0 +1,148 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  font-style: italic;
+}
+
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+  transform: scale(1.1);
+  background-color: #555;
+  border-radius: 4px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: lightgrey;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+.table {
+  position: absolute;
+  width: 1500px;
+  height: 650px;
+  left: 30px;
+  top: 150px;
+  background: #ebeef3;
+  border-radius: 6px;
+}
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 10px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  color: #262626;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f3dcf5;
+  color: #000000;
+}
+tr:hover {
+  background-color: #ddd;
+}
+.clubsrank {
+  position: absolute;
+  width: 500px;
+  height: 38px;
+  left: 35px;
+  top: 95px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 38px;
+  color: #262626;
+  opacity: 0;
+  animation: fadeIn 2s forwards, colorBlink 3s infinite;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes colorBlink {
+  0%,
+  100% {
+    color: #262626;
+  }
+  50% {
+    color: #ff0000;
+  }
+}
+.formoreinfo {
+  font-family: "ABeeZee";
+  position: relative;
+  left: 900px;
+  color: gray;
+  top: 70px;
+}

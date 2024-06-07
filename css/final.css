@@ -1,0 +1,546 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  font-style: italic;
+}
+
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+  transform: scale(1.1);
+  background-color: #555;
+  border-radius: 4px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: lightgrey;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+.photoofbasketballplayer {
+  position: absolute;
+  width: 720px;
+  height: 580px;
+  left: 380px;
+  top: 65px;
+  background: url(../images/basketball-player-action-sunset\ 1.png);
+}
+.photoofball {
+  position: absolute;
+  width: 716px;
+  height: 513px;
+  left: -25px;
+  top: 100px;
+  background: url(../images/baskettop.png);
+}
+.textforball {
+  position: absolute;
+  width: 470px;
+  height: 300px;
+  left: 231px;
+  top: 105px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-size: 80px;
+  line-height: 75px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  gap: 27px;
+  position: absolute;
+  width: 89px;
+  height: 34px;
+  left: 1180px;
+  top: 97px;
+  background: #e1e8f0;
+  border-radius: 3px;
+}
+.firstphotoright {
+  position: absolute;
+  width: 270px;
+  height: 233px;
+  left: 1131px;
+  top: 155px;
+  position: absolute;
+  width: 270px;
+  height: 233px;
+  left: 1180px;
+  top: 155px;
+  background: url("../images/beautiful-young-african-woman-sports-clothing-running-against-gray-background\ 1.png");
+}
+.secondphotoright {
+  position: absolute;
+  width: 270px;
+  height: 233px;
+  left: 1180px;
+  top: 418px;
+  background: url(../images/formula.png);
+  border-radius: 6px;
+}
+.textunderplayer {
+  position: absolute;
+  width: 364px;
+  height: 75px;
+  left: 632px;
+  top: 528px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #262626;
+}
+.reading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  gap: 10px;
+  position: absolute;
+  width: 285px;
+  height: 62px;
+  left: 631px;
+  top: 627px;
+  background: #262626;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.reading:active {
+  transform: scale(0.95);
+}
+.textforbutton {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 38px;
+  left: -12px;
+  top: 8px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #e1e8f0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.category-large {
+  position: absolute;
+  width: 118px;
+  height: 38px;
+  left: 135px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #262626;
+}
+.smallforphoto {
+  position: absolute;
+  width: 111px;
+  height: 10px;
+  left: 20px;
+  top: 180px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100.9%;
+  color: rgba(38, 38, 38, 0.6);
+}
+.bigtextforphoto {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 20px;
+  top: 190px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 123.9%;
+  color: #262626;
+}
+
+.lionelmessicontainer {
+  position: relative;
+  width: 1168px;
+  height: 700px;
+  left: 200px;
+  top: 900px;
+  background: #ebeef3;
+}
+
+.imageleomessi {
+  background-size: cover;
+  mix-blend-mode: normal;
+  border-radius: 6px;
+  position: relative;
+  width: 1168px;
+  height: 630px;
+  left: 0px;
+  top: 0px;
+}
+
+.overlayleomessi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 20%);
+}
+
+.contentleomessi {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  width: calc(100% - 40px);
+  height: calc(100% - 80px);
+  display: none; /* Hide all by default */
+}
+
+.contentleomessi.activeleomessi {
+  display: block; /* Only show the active one */
+}
+
+.categoryleomessi {
+  top: 100px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.titleleomessi {
+  position: absolute;
+  width: 760px;
+  height: 112px;
+  left: 30px;
+  top: 400px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #f9fafc;
+}
+
+.descriptionleomessi1 {
+  font-size: 16px;
+  position: absolute;
+  left: 30px;
+  top: 370px;
+  width: 375px;
+  height: 14px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100.9%;
+  color: #9ba6bad7;
+}
+
+.descriptionleomessi2 {
+  position: absolute;
+  width: 697px;
+  height: 56px;
+  left: 30px;
+  top: 500px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.paginationleomessi {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.arrowleomessi {
+  font-size: 20px;
+  color: rgb(236, 7, 7);
+  cursor: pointer;
+  margin: 0 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.arrowleomessi:hover {
+  background: rgb(218, 29, 29);
+  color: #fff;
+}
+
+.pageleomessi-container {
+  display: flex;
+  align-items: center;
+}
+
+.pageleomessi {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.pageleomessi.activeleomessi,
+.pageleomessi:hover {
+  background: rgb(218, 29, 29);
+  color: #000;
+}
+
+.thelastborder {
+  position: absolute;
+  width: 1168px;
+  height: 385px;
+  left: 208px;
+  top: 1900px;
+  background: #ebeef3;
+  border-radius: 6px;
+}
+.imageforlastborder {
+  position: absolute;
+  width: 520px;
+  height: 385px;
+  right: 0px;
+  background: url(../images/american-football-player-posing-with-ball-white\ 1.svg);
+}
+.bixtext {
+  position: absolute;
+  width: 614px;
+  height: 120px;
+  left: 90px;
+  top: 100px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 514px;
+  height: 58px;
+  top: 280px;
+  left: 90px;
+}
+
+.input-field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border: 1px solid #262626;
+  border-radius: 6px 0 0 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+  color: rgba(38, 38, 38, 0.37);
+  outline: none;
+}
+
+.send-button {
+  position: absolute;
+  right: 0;
+  width: 74.09px;
+  height: 100%;
+  background: #262626;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.arrow {
+  color: #ebeef3;
+  font-size: 20px;
+  transform: rotate(-45deg);
+}
+
+/* .lastpagination {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 470px;
+  height: 50px;
+  left: calc(50% - 470px / 2 + 350px);
+  top: 4414px;
+}
+
+.lastpagination button {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 5px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.lastpagination button:hover {
+  background-color: #eee;
+  border-color: #bbb;
+  transform: scale(1.05);
+}
+
+.lastleft-button {
+  background-color: #bab8b8;
+}
+
+.lastright-button {
+  background-color: #262626;
+  color: white;
+}
+
+.lastpage-number {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.lastpage-number.active {
+  background-color: black;
+  color: white;
+} */
+.social-media-buttons {
+  position: absolute;
+  width: 187.31px;
+  height: 48.13px;
+  left: 220px;
+  top: 2360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48.13px;
+  height: 48.13px;
+  background-color: #262626;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-button:hover {
+  background-color: #ffffff;
+}

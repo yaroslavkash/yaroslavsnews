@@ -1,0 +1,341 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.body {
+  margin: 0;
+  position: relative;
+}
+
+.header {
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  font-style: italic;
+}
+
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+  transform: scale(1.1);
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: lightgrey;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.container {
+  left: 300px;
+  position: relative;
+  top: 370px;
+  margin-top: 100px;
+}
+
+.trandingnews {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.slide-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imagefirstperson,
+.imagesecondperson,
+.imagethirdperson {
+  position: absolute;
+  bottom: -20px;
+  top: 30px;
+  left: 440px;
+  width: 66px;
+  height: 66p;
+}
+.name {
+  position: absolute;
+  width: 100px;
+  height: 10.35px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  left: 440px;
+  top: 95px;
+}
+.date {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  left: 25px;
+  top: 100px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100.9%;
+  color: rgba(38, 38, 38, 0.6);
+}
+.smallertext {
+  position: absolute;
+  width: 245px;
+  height: 75px;
+  left: 30px;
+  top: 130px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 136.9%;
+  color: #262626;
+}
+.bigtext {
+  position: relative;
+  top: 210px;
+  width: 500px;
+  font-size: 20px;
+  height: 70px;
+  left: 150px;
+  font-family: "DM Sans";
+  font-style: normal;
+  color: rgba(38, 38, 38, 0.6);
+}
+.textforbadminton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  position: absolute;
+  width: 74.23px;
+  height: 20.78px;
+  border: 0.75px solid #ebeef3;
+  border-radius: 4px;
+  right: 30px;
+  top: 15px;
+  color: white;
+}
+.basketballequipment {
+  position: absolute;
+  width: 370px;
+  height: 248px;
+  left: 150px;
+  top: 200px;
+  background: url(../images/basketball-equipment\ 1.png);
+}
+.hockey {
+  position: absolute;
+  width: 370px;
+  height: 248px;
+  left: 570px;
+  top: 200px;
+  background: url(../images/hockey-players\ 1.png);
+}
+.badminton {
+  left: 990px;
+  position: absolute;
+  width: 370px;
+  height: 248px;
+  top: 200px;
+  background: url(../images/three-white-shuttlecocks-badminton-racquet\ 1.png);
+}
+.textforhockey {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  position: absolute;
+  width: 74.23px;
+  height: 20.78px;
+  border: 0.75px solid #ebeef3;
+  border-radius: 4px;
+  right: 30px;
+  top: 15px;
+  color: white;
+}
+.imageforfirstperson {
+  position: absolute;
+  background: url(../images/basketball-equipment\ 1.png) no-repeat center top;
+  background-size: cover;
+  height: 100px;
+  width: 250px;
+  top: 10px;
+  left: 30px;
+  overflow: hidden;
+  background-position-y: -70px;
+}
+.imageforsecondperson {
+  position: absolute;
+  background: url(../images/hockey-players\ 1.png) no-repeat center top;
+  background-size: cover;
+  height: 100px;
+  width: 250px;
+  top: 10px;
+  left: 30px;
+  overflow: hidden;
+  background-position-y: -30px;
+}
+.imageforthirdperson {
+  position: absolute;
+  background: url(../images/three-white-shuttlecocks-badminton-racquet\ 1.png)
+    no-repeat center top;
+  background-size: cover;
+  height: 100px;
+  width: 250px;
+  top: 10px;
+  left: 30px;
+  overflow: hidden;
+  background-position-y: -30px;
+}
+.slide-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

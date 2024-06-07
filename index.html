@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sportsnewsfromyaroslav</title>
+    <link rel="stylesheet" href="./css/final.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/Sport News (1).png" alt="SportNews" class="logo" />
+      <nav class="menu">
+        <div class="menu-item">
+          <a href="./index.html" class="menu-link">Home</a>
+        </div>
+        <div class="menu-item active">
+          <a href="./category.html" class="menu-link">Category</a>
+        </div>
+        <div class="menu-item">
+          <a href="./trendingnews.html" class="menu-link">Trending News</a>
+        </div>
+
+        <div class="menu-item">
+          <a href="./table.html" class="menu-link">Clubs Ranking</a>
+        </div>
+        <div class="menu-item">
+          <a href="./sportsarticle.html" class="menu-link">Sports Article</a>
+        </div>
+      </nav>
+      <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+          <g>
+            <path
+              d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+            ></path>
+          </g>
+        </svg>
+        <input placeholder="Search" type="search" class="input" />
+      </div>
+    </header>
+    <!-- Фото баскетболіста -->
+    <div class="photoofbasketballplayer"></div>
+    <!-- Фото м'яча -->
+    <div class="photoofball"></div>
+    <div class="textforball">Top scorer to the final match</div>
+    <!-- Новини з права -->
+    <div class="today">Today</div>
+    <!-- Перше фото -->
+    <div class="firstphotoright">
+      <div class="smallforphoto">Race 98 - 03 June 2023</div>
+      <div class="bigtextforphoto">
+        Ethiopian runners took the top four spots.
+      </div>
+    </div>
+    <!-- Друге фото -->
+    <div class="secondphotoright">
+      <div class="smallforphoto">INDYCAR - 03 June 2023</div>
+      <div class="bigtextforphoto">
+        IndyCar Detroit: Dixon quickest in second practice
+      </div>
+    </div>
+    <div class="textunderplayer">
+      The EuroLeague Finals Top Scorer is the individual award for the player
+      that gained the highest points in the EuroLeague Finals
+    </div>
+    <button class="reading">
+      <div class="textforbutton">Continue Reading</div>
+    </button>
+    <script>
+      function redirectToWikipedia() {
+        window.location.href =
+          "https://en.wikipedia.org/wiki/EuroLeague_Finals_Top_Scorer";
+      }
+    </script>
+    <div class="lionelmessicontainer">
+      <div
+        class="imageleomessi"
+        id="image1"
+        style="background-image: url('./images/000802981W.jpg')"
+      ></div>
+      <div class="overlayleomessi"></div>
+      <div class="contentleomessi activeleomessi" id="content1">
+        <div class="categoryleomessi">Football</div>
+        <div class="titleleomessi">
+          LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB CONFIRMS
+        </div>
+        <div class="descriptionleomessi1">
+          Agence France-Presse - 04 June 2023
+        </div>
+        <div class="descriptionleomessi2">
+          The EuroLeague Finals Top Scorer is the individual award for the
+          player that gained the highest points in the EuroLeague Finals.
+        </div>
+      </div>
+      <div
+        class="imageleomessi"
+        id="image2"
+        style="
+          background-image: url('./images/lebron_james-4.jpg');
+          display: none;
+        "
+      ></div>
+      <div class="overlayleomessi"></div>
+      <div class="contentleomessi" id="content2">
+        <div class="categoryleomessi">Basketball</div>
+        <div class="titleleomessi">
+          LEBRON JAMES ACHIEVES ANOTHER MILESTONE IN HIS ILLUSTRIOUS CAREER
+        </div>
+        <div class="descriptionleomessi1">Sports News - 10 June 2023</div>
+        <div class="descriptionleomessi2">
+          LeBron James continues to break records, solidifying his place as one
+          of the greatest basketball players.
+        </div>
+      </div>
+      <div
+        class="imageleomessi"
+        id="image3"
+        style="
+          background-image: url('./images/ap21192613941570-b6a49c4595077d178282c29b889725f6ec09b201-s1200.jpg');
+          display: none;
+        "
+      ></div>
+      <div class="overlayleomessi"></div>
+      <div class="contentleomessi" id="content3">
+        <div class="categoryleomessi">Tennis</div>
+        <div class="titleleomessi">
+          NOVAK DJOKOVIC WINS ANOTHER GRAND SLAM TITLE
+        </div>
+        <div class="descriptionleomessi1">BBC Sports - 20 June 2023</div>
+        <div class="descriptionleomessi2">
+          Djokovic wins his 23rd Grand Slam, breaking yet another record in his
+          illustrious career.
+        </div>
+      </div>
+      <div class="paginationleomessi">
+        <button class="arrowleomessi prev" onclick="changePage(-1)">←</button>
+        <div class="pageleomessi-container">
+          <button class="pageleomessi activeleomessi" onclick="goToPage(1)">
+            1
+          </button>
+          <button class="pageleomessi" onclick="goToPage(2)">2</button>
+          <button class="pageleomessi" onclick="goToPage(3)">3</button>
+        </div>
+        <button class="arrowleomessi next" onclick="changePage(1)">→</button>
+      </div>
+    </div>
+    <script>
+      let currentPage = 1;
+      const totalPages = 3;
+
+      function showPage(page) {
+        for (let i = 1; i <= totalPages; i++) {
+          document
+            .getElementById("content" + i)
+            .classList.remove("activeleomessi");
+          document.getElementById("image" + i).style.display = "none";
+          document
+            .querySelector(
+              ".pageleomessi-container button:nth-child(" + i + ")"
+            )
+            .classList.remove("activeleomessi");
+        }
+        document
+          .getElementById("content" + page)
+          .classList.add("activeleomessi");
+        document.getElementById("image" + page).style.display = "block";
+        document
+          .querySelector(
+            ".pageleomessi-container button:nth-child(" + page + ")"
+          )
+          .classList.add("activeleomessi");
+      }
+
+      function goToPage(page) {
+        currentPage = page;
+        showPage(currentPage);
+      }
+
+      function changePage(direction) {
+        currentPage += direction;
+        if (currentPage < 1) currentPage = totalPages;
+        if (currentPage > totalPages) currentPage = 1;
+        showPage(currentPage);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showPage(currentPage);
+      });
+    </script>
+    <div class="thelastborder">
+      <div class="imageforlastborder"></div>
+      <div class="bixtext">Newsletter Subscription</div>
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Введіть вашу email адресу"
+        />
+        <a href="mailto:shovon.khan0099@gmail.com" class="send-button">
+          <span class="arrow">&#x2198;</span>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="lastpagination">
+        <button class="lastleft-button">&rarr;</button>
+        <button class="lastpage-number active">1</button>
+        <button class="lastpage-number">2</button>
+        <button class="lastpage-number">3</button>
+        <button class="lastpage-number">4</button>
+        <button class="lastright-button">&rarr;</button>
+    </div> -->
+    <div class="social-media-buttons">
+      <button
+        class="social-button"
+        onclick="window.open('https://www.facebook.com', '_blank')"
+      >
+        <img src="./images/facebook.png" alt="Facebook" />
+      </button>
+      <button
+        class="social-button"
+        onclick="window.open('https://www.instagram.com', '_blank')"
+      >
+        <img src="./images/inst.png" alt="Instagram" />
+      </button>
+      <button
+        class="social-button"
+        onclick="window.open('https://www.twitter.com', '_blank')"
+      >
+        <img src="./images/twitter.png" alt="Twitter" />
+      </button>
+    </div>
+  </body>
+</html>

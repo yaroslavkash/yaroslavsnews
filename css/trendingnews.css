@@ -1,0 +1,328 @@
+body {
+  background-image: url("../images/R\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  font-style: italic;
+}
+
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+  transform: scale(1.1);
+  background-color: #555;
+  border-radius: 4px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: lightgrey;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+.container {
+  position: absolute;
+  box-sizing: border-box;
+  width: 600px;
+  height: 609px;
+  left: 167px;
+  top: 92px;
+  background: #ebeef3;
+  border-radius: 6px;
+}
+
+.trandingnews {
+  position: absolute;
+  width: 192px;
+  height: 38px;
+  left: 58px;
+  top: 30px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #262626;
+}
+.imageforhorse {
+  position: absolute;
+  width: 234px;
+  height: 150px;
+  left: 58px;
+  top: 80px;
+  background: url(../images/race-hose\ 1.png);
+  border-radius: 6px;
+}
+.video-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 234px;
+  height: 150px;
+  border-radius: 6px;
+  display: none;
+}
+.textfortop {
+  position: absolute;
+  width: 111px;
+  height: 10px;
+  top: 40px;
+  left: 243px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100.9%;
+  color: rgba(38, 38, 38, 0.6);
+}
+.textformittel {
+  position: absolute;
+  width: 245px;
+  height: 75px;
+  left: 243px;
+  top: 55px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 136.9%;
+  color: #262626;
+}
+.textfordown {
+  position: absolute;
+  width: 239px;
+  height: 45px;
+  left: 243px;
+  top: 103px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 123.9%;
+  color: #696868;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.buttonformore {
+  position: absolute;
+  left: 243px;
+  cursor: pointer;
+  top: 0px;
+  padding: 10px 20px;
+  border: 1px solid #ebeef3;
+  border-radius: 3px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ebeef3;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+.buttonformore1 {
+  position: absolute;
+  left: 243px;
+  cursor: pointer;
+  top: 0px;
+  padding: 10px 20px;
+  border: 1px solid #ebeef3;
+  border-radius: 3px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ebeef3;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+.buttonformore2 {
+  position: absolute;
+  left: 243px;
+  cursor: pointer;
+  top: 0px;
+  padding: 10px 20px;
+  border: 1px solid #ebeef3;
+  border-radius: 3px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ebeef3;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+.buttonformore:hover {
+  animation: pulse 0.6s infinite;
+}
+.imageforbike {
+  position: absolute;
+  width: 234px;
+  height: 150px;
+  left: 58px;
+  top: 255px;
+  background: url(../images/cyclist-leads-actionfront-view-man-riding-bicycle-racing-road\ 1.png);
+  border-radius: 6px;
+}
+.imageforgarcia {
+  position: absolute;
+  width: 234px;
+  height: 150px;
+  left: 58px;
+  top: 430px;
+  background: url(../images/empty-boxing-arena-waiting-new-round-d-render-illustration\ 1.png);
+  border-radius: 6px;
+}
+.image-box {
+  position: relative;
+  top: 3px;
+  left: 740px;
+  width: 570px;
+  height: 609px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(238, 12, 12, 0.1);
+  border-radius: 6px;
+  background: url("../images/bike-equipment-sportswear-sports-young.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+.image-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.category {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ebeef3;
+  border-radius: 3px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ebeef3;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.category:hover {
+  animation: pulse 0.6s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+.bigtextfor2 {
+  position: absolute;
+  width: 509px;
+  height: 112px;
+  left: 30px;
+  bottom: 30px;
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.smalltextfor2 {
+  position: absolute;
+  width: 272.41px;
+  height: 13.8px;
+  left: 30px;
+  bottom: 36px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100.9%;
+  color: #989898;
+}
